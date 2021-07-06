@@ -7,8 +7,6 @@ The Greeting sample app by Mark Ng
 
 #### Run Locally
 
-**Run application**
-
 ```bash
 ./gradlew clean greeting-app:bootRun
 ```
