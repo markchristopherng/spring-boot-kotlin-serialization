@@ -10,9 +10,7 @@ plugins {
 	kotlin("plugin.spring") version "1.5.20"
 }
 
-group = "com"
-version = "0.0.1-SNAPSHOT"
-
+val kotinSerializationVersion: String by project
 
 allprojects {
 	repositories {
@@ -32,7 +30,7 @@ subprojects {
 
 	dependencies {
 		implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-		implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1")
+		implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotinSerializationVersion")
 	}
 }
 

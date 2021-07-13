@@ -6,6 +6,8 @@ plugins {
     kotlin("plugin.spring")
 }
 
+val kotinSerializationVersion: String by project
+
 tasks.jar {
     enabled = true
 }
@@ -20,6 +22,5 @@ dependencies {
    	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1")
-
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotinSerializationVersion")
 }
